@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta name="description" content="Albin home" />
+    <link rel="stylesheet" type="text/css" href="index.css" />
+    <link href="https://fonts.googleapis.com/css?family=Raleway&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Quicksand:300&display=swap" rel="stylesheet">
+    <title>Albin</title>
+  </head>
+  <body>
+    <div class="homepage-container">
+      <div class="welcome">
+      <div class="menu-container" onclick="myFunction(this)">
+        <div class="bar1"></div>
+        <div class="bar2"></div>
+        <div class="bar3"></div>
+      </div>
+      <div class="dropdown-content" id="dropdown-content">
+        <a href="#home">home</a>
+        <a href="#projects">projects</a>
+        <a href="#contact">contact</a>
+      </div>
+      <div id="home" class="text-container">
+          <div class="typewriter">
+            <h1>Hi my name is Albin, welcome!
+            </h1> 
+          </div>
+        </div>
+    </div>
+    <div class="projects" id="projects">
+      <div id="projects-header">Projects</div>
+
+      <div class="projects-container">
+        <div id="project1" class="project-card">
+          <p>Project 1</p>
+          <span class="border-line">
+        </div>
+        <div id="project2" class="project-card">
+          <p>Project 2</p>
+          <span class="border-line">
+
+        </div>
+      </div>
+    </div>
+      <br></br>
+      <br></br>
+      <br></br>
+      <br></br>
+      <br></br>
+      <br></br>
+      <br></br>
+      <br></br>
+      <br></br>
+      <br></br>
+      <br></br>
+      <br></br>
+      <br></br>
+      <div id="contact"><h1>CONTACT</h1></div>
+      <br></br>
+      <br></br>
+      <br></br>
+    </div>
+    <script>
+      function myFunction(x) {
+        displayMenu();
+
+        hamburgerAnimation(x);
+      }
+    </script>
+    <script>
+      function displayMenu() {
+        var dropdown = document.getElementById("dropdown-content");
+        if (dropdown.style.display === "block") {
+          dropdown.style.display = "none";
+        } else {
+          dropdown.style.display = "block";
+        }
+      }
+    </script>
+    <script>
+      function hamburgerAnimation(x) {
+        x.classList.toggle("change");
+      }
+    </script>
+  </body>
+</html>

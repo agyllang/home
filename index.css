@@ -1,0 +1,156 @@
+body {
+  margin: 0;
+}
+.welcome {
+  background-image: url("forest.jpg");
+  background-size: cover;
+  height: 600px;
+  background-position: center;
+}
+/* -------HAMBURGER-MENU----------- */
+.menu-container {
+  margin: 20px;
+  top: 0;
+  bottom: 0;
+  right: 0;
+  position: fixed;
+  cursor: pointer;
+}
+
+.bar1,
+.bar2,
+.bar3 {
+  width: 50px;
+  height: 5px;
+  background-color: rgb(97, 97, 97);
+  margin: 6px 0;
+  transition: 0.4s;
+}
+.change .bar1 {
+  -webkit-transform: rotate(-45deg) translate(-9px, 6px);
+  transform: rotate(-45deg) translate(-9px, 6px);
+}
+
+.change .bar2 {
+  opacity: 0;
+}
+
+.change .bar3 {
+  -webkit-transform: rotate(45deg) translate(-8px, -8px);
+  transform: rotate(45deg) translate(-8px, -8px);
+}
+
+.dropdown-content {
+  margin: 25px;
+  float: right;
+  /* top: 20px; */
+  top: 40px;
+  right: 0;
+  position: fixed;
+  font-family: "Quicksand", sans-serif;
+  font-size: 25px;
+
+  display: none;
+  /* position: absolute; */
+  background-color: rgba(180, 177, 177, 0.7);
+  min-width: 70px;
+  box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.5);
+  z-index: 1;
+}
+
+.dropdown-content a {
+  color: black;
+  padding: 10px 10px;
+  text-decoration: none;
+  display: block;
+}
+
+.dropdown-content a:hover {
+  background: rgb(102, 102, 101);
+}
+
+/* ---------------------------------------------------------- */
+
+/*----TYPEWRITER--------*/
+
+.text-container {
+  /* background: #333; */
+  width: 60vw;
+  font-size: 20px;
+  position: absolute;
+  left: 200px;
+  top: 0px;
+  padding-top: 5em;
+  display: flex;
+  justify-content: center;
+}
+
+.typewriter h1 {
+  color: #fff;
+  font-family: monospace;
+  overflow: hidden; /* Ensures the content is not revealed until the animation */
+  border-right: 0.15em solid rgb(155, 154, 152); /* The typwriter cursor */
+  white-space: nowrap; /* Keeps the content on a single line */
+  margin: 0 auto; /* Gives that scrolling effect as the typing happens */
+  letter-spacing: 0.15em; /* Adjust as needed */
+  animation: typing 3.5s steps(30, end), blink-caret 0.5s step-end infinite;
+}
+
+/* The typing effect */
+@keyframes typing {
+  from {
+    width: 0;
+  }
+  to {
+    width: 100%;
+  }
+}
+
+/* The typewriter cursor effect */
+@keyframes blink-caret {
+  from,
+  to {
+    border-color: transparent;
+  }
+  50% {
+    border-color: white;
+  }
+}
+/* ---------------------------------------------------------- */
+/* ----------------PROJECTS----------------- */
+#projects-header {
+  top: 70px;
+  font-size: 100px;
+  text-align: center;
+  position: relative;
+  padding: 50px;
+  margin-bottom: 50px;
+  font-family: "Raleway", sans-serif;
+  z-index: 0;
+}
+
+.projects-container {
+  background: rgba(233, 209, 162, 0.9);
+  width: 80%;
+  margin: auto;
+  padding: 20px;
+  /* margin-left: 30px; */
+}
+
+.project-card {
+  position: center;
+  background: rgba(156, 194, 236, 0.726);
+  margin: 30px;
+  text-align: center;
+  border-radius: 2px;
+  width: 90%;
+}
+.project-card p {
+  font-family: "Raleway", sans-serif;
+  font-size: 62px;
+}
+.border-line {
+  border: 0;
+  border-bottom: 2px solid black;
+  width: 90%;
+}
