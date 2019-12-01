@@ -1,3 +1,6 @@
+html {
+  scroll-behavior: smooth;
+}
 body {
   margin: 0;
 }
@@ -15,6 +18,8 @@ body {
   right: 0;
   position: fixed;
   cursor: pointer;
+  z-index: 2;
+  margin-right: 0;
 }
 
 .bar1,
@@ -42,12 +47,13 @@ body {
 
 .dropdown-content {
   margin: 25px;
+  margin-right: 0;
   float: right;
   /* top: 20px; */
   top: 40px;
   right: 0;
   position: fixed;
-  font-family: "Quicksand", sans-serif;
+  font-family: "Montserrat", sans-serif;
   font-size: 25px;
 
   display: none;
@@ -55,7 +61,7 @@ body {
   background-color: rgba(180, 177, 177, 0.7);
   min-width: 70px;
   box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.5);
-  z-index: 1;
+  z-index: 2;
 }
 
 .dropdown-content a {
@@ -86,8 +92,9 @@ body {
 }
 
 .typewriter h1 {
+  font-size: 5vw;
   color: #fff;
-  font-family: monospace;
+  font-family: "Roboto Mono", monospace;
   overflow: hidden; /* Ensures the content is not revealed until the animation */
   border-right: 0.15em solid rgb(155, 154, 152); /* The typwriter cursor */
   white-space: nowrap; /* Keeps the content on a single line */
@@ -119,8 +126,8 @@ body {
 /* ---------------------------------------------------------- */
 /* ----------------PROJECTS----------------- */
 #projects-header {
-  top: 70px;
-  font-size: 100px;
+  top: 40px;
+  font-size: 10vw;
   text-align: center;
   position: relative;
   padding: 50px;
@@ -130,27 +137,138 @@ body {
 }
 
 .projects-container {
-  background: rgba(233, 209, 162, 0.9);
-  width: 80%;
+  background: rgba(230, 227, 222, 0.9);
+  width: 60vw;
   margin: auto;
-  padding: 20px;
-  /* margin-left: 30px; */
+  padding: 10px;
+  display: flex;
+  flex-direction: column;
+  border-radius: 3px;
+  box-shadow: 3px 8px 6px -6px rgba(85, 84, 84, 0.5);
+  margin-bottom: 30px;
 }
 
-.project-card {
-  position: center;
-  background: rgba(156, 194, 236, 0.726);
-  margin: 30px;
+.projects-container {
+  transition: all 0.7s ease-in-out;
+}
+.projects-container:hover {
+  transform: scale(1.05);
+}
+
+#project-card11 {
+  background-color: rgba(82, 201, 145, 0.9);
+  padding: 15px;
+  border-radius: 5px;
+  max-width: 70vw;
+  min-height: 300px;
+  margin: 10px;
+}
+#project-card21 {
+  background-color: rgba(82, 201, 201, 0.9);
+  padding: 15px;
+  border-radius: 5px;
+  max-width: 70vw;
+  min-height: 300px;
+  margin: 10px;
+}
+
+.avatar-container {
+  vertical-align: middle;
+}
+.img {
+  border-radius: 3px;
+  max-width: 200px;
+  min-width: 50px;
+  background: white;
+  margin-right: 20px;
+  /* border-right: 2px solid black; */
+}
+
+.row {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.details-container {
+  flex: 2;
+}
+
+.avatar-container {
+  flex-basis: 250px;
+}
+
+.content p {
+  font-family: "Quicksand", sans-serif;
+}
+
+.content h3 {
+  font-family: "Roboto Mono", monospace;
+}
+
+/* ----------------------------------- */
+/*----------------CONTACT------------------*/
+
+.contact {
+  background-color: #325e86;
+  width: 100%;
+  margin: auto;
+  padding-bottom: 20px;
+  /* margin-bottom: 0; */
+  /* position: center; */
+}
+.contact-center {
+  /* display: inline-block; */
+}
+
+.contact-container {
+  background: rgba(230, 227, 222, 0.9);
+  width: 60vw;
+  margin: auto;
+  padding: 10px;
+  display: flex;
+  flex-direction: column;
+  border-radius: 3px;
+  box-shadow: 3px 8px 6px -6px rgba(85, 84, 84, 0.5);
+  margin-bottom: 0px;
+}
+.contact-container {
+  transition: all 0.7s ease-in-out;
+}
+.contact-container:hover {
+  transform: scale(1.02);
+}
+
+#contact-header {
+  /* top: 30px; */
+  font-size: 10vw;
   text-align: center;
-  border-radius: 2px;
-  width: 90%;
-}
-.project-card p {
+  position: relative;
+  padding: 50px;
+  margin-bottom: 10px;
   font-family: "Raleway", sans-serif;
-  font-size: 62px;
+  z-index: 0;
 }
-.border-line {
-  border: 0;
-  border-bottom: 2px solid black;
-  width: 90%;
+
+#contact-img {
+  float: left;
+  max-width: 20vw;
+  border-radius: 50%;
+  /* top: 20px; */
+  box-shadow: 3px 8px 6px -6px rgba(85, 84, 84, 0.5);
+  margin: 20px;
+}
+#anchor-linkedin {
+  position: relative;
+  display: center;
+}
+.contact-container a {
+  text-decoration: none;
+}
+/* .contact-content {
+  flex-wrap: wrap;
+} */
+
+.contact-content h3 {
+  text-align: center;
+  display: inline-block;
 }
